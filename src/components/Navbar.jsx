@@ -5,36 +5,37 @@ import {BsList} from "react-icons/bs";
 import {  hamberger, responseElements } from "./styles";
 import { useState } from "react";
 
+
 const Navbar=()=>{
 const [show,setShow]=useState("none");
 return(
 <>
-<Flex position="fixed" top="0px" fontFamily="Roboto Mono, monospace" bg="black" color="white" flexDirection="row" border="1px solid black" w="100%" h="60px" justifyContent="space-around" alignItems="center" backgroundColor="black" borderBottom="1px solid grey" zIndex="1000">
+<Flex id="nav-menu" position="fixed" top="0px" fontFamily="Roboto Mono, monospace" bg="black" color="white" flexDirection="row" border="1px solid black" w="100%" h="60px" justifyContent="space-around" alignItems="center" backgroundColor="black" borderBottom="1px solid grey"  zIndex="1000">
 
 <Box h="100%">
-<Link to="#home">
+<Link to="#home" smooth>
     <Image src={logo} h="100%"/>
     </Link>
 </Box>
 
 <Link to="#home" smooth  >
-<Text display={responseElements}  _hover={{color:"teal", borderBottomWidth:"2px", borderBottomColor:"teal"}} transition="0.4s">Home</Text>
+<Text class="nav-link home" display={responseElements}  _hover={{color:"teal", borderBottomWidth:"2px", borderBottomColor:"teal"}} transition="0.4s">Home</Text>
 </Link>
 <Link to="#about" smooth>
-<Text   display={responseElements}  _hover={{color:"teal", borderBottomWidth:"2px", borderBottomColor:"teal"}} transition="0.4s">About</Text>
+<Text  class="nav-link about" display={responseElements}  _hover={{color:"teal", borderBottomWidth:"2px", borderBottomColor:"teal"}} transition="0.4s">About</Text>
 </Link>
 <Link to="#Skills" smooth>
-<Text  display={responseElements} _hover={{color:"teal", borderBottomWidth:"2px", borderBottomColor:"teal"}} transition="0.4s">Skills</Text>
+<Text class="nav-link skills" display={responseElements} _hover={{color:"teal", borderBottomWidth:"2px", borderBottomColor:"teal"}} transition="0.4s">Skills</Text>
 </Link>
 <Link to="#projects" smooth>
-<Text  display={responseElements} _hover={{color:"teal", borderBottomWidth:"2px", borderBottomColor:"teal"}} transition="0.4s">Projects</Text>
+<Text class="nav-link projects" display={responseElements} _hover={{color:"teal", borderBottomWidth:"2px", borderBottomColor:"teal"}} transition="0.4s">Projects</Text>
 </Link>
 <Link to="#contact" smooth>
-<Text display={responseElements} _hover={{color:"teal", borderBottomWidth:"2px", borderBottomColor:"teal"}} transition="0.4s">Contact</Text>
+<Text  class="nav-link contact" display={responseElements} _hover={{color:"teal", borderBottomWidth:"2px", borderBottomColor:"teal"}} transition="0.4s">Contact</Text>
 </Link>
 
 <Link to="#resume" smooth>
-<Text display={responseElements} _hover={{color:"teal", borderBottomWidth:"2px", borderBottomColor:"teal"}} transition="0.4s">Resume</Text>
+<Text class="nav-link resume" display={responseElements} _hover={{color:"teal", borderBottomWidth:"2px", borderBottomColor:"teal"}} transition="0.4s">Resume</Text>
 </Link>
 
 
