@@ -7,15 +7,23 @@ import { AiOutlineDownload } from "react-icons/ai";
 import Typical from "react-typical";
 import { HomeRightBoxHomeWidth,RightBoxHomeHeight, homeres, ImageBoxHomeHeight, ImageBoxHomeWidth, myNameIsRes } from "./styles";
 export const Home = () => {
+
   return (
     <Box
       h="100vh"
       bg="black"
       w="100%"
       id="home"
-      mt="60px"
+      mt={{
+        base:"60px", 
+        sm: '60px',
+        md: '60px',
+        lg: '0px',
+        xl: '0px',
+        '2xl': '0px'
+      }}
       
-      fontSize="30px"
+      
       display="flex"
       flexDirection={homeres}
       justifyContent="space-between"
@@ -29,14 +37,38 @@ export const Home = () => {
         justifyContent="center"
         alignItems="center"
          
-       
+     
       >
-        <Image src={dp}  width="450px" />
+        <Image src={dp}  width="70%" />
       </Box>
+{/* 35 */}
+      <Box h={RightBoxHomeHeight} w={HomeRightBoxHomeWidth}   justifyContent={["left","center",]} dispay="flex"  textAlign={myNameIsRes} m="auto"  color="white"  alignItems="stretch" display="flex" flexDirection={"column"} gap="15px"     fontSize={{
+      base:"16px", 
+      sm: '16px',
+      md: '25px',
+      lg: '25px',
+      xl: '25px',
+      '2xl': '25px'
 
-      <Box h={RightBoxHomeHeight} w={HomeRightBoxHomeWidth}   justifyContent={["left","center",]} dispay="flex"  textAlign={myNameIsRes} m="auto"  color="white"  alignItems="stretch" display="flex" flexDirection={"column"} gap="15px" fontSize="25px">
-        <Box  ><Text fontSize="35px" left="0" >Hi, My name is</Text></Box>
-        <Text fontSize="75px" fontWeight="bold" color="teal">
+  }}  >
+        <Box  ><Text fontSize={{
+        base:"20px", 
+        sm: '20px',
+        md: '35px',
+        lg: '35px',
+        xl: '35px',
+        '2xl': '35px'
+
+    }} left="0" >Hi, My name is</Text></Box>
+        <Text  id="user-detail-name" fontSize={{
+        base:"25px", 
+        sm: '25px',
+        md: '60px',
+        lg: '75px',
+        xl: '75px',
+        '2xl': '75px'
+
+    }} fontWeight="bold" color="teal">
           Akash Singha
         </Text>
         <Typical
@@ -68,8 +100,17 @@ export const Home = () => {
             </Button>
           </a>
         {/* </Box> */}
-        <Box fontSize="20px">
-          <p><br/><q>Programming is an art where mind paints <br/> the logic on the Computer.... </q><br/>-Donald Knuth</p>
+        <Box fontSize={{
+        base:"16px", 
+        sm: '16px',
+        md: '20px',
+        lg: '25px',
+        xl: '25px',
+        '2xl': '25px'
+
+    }}>
+          <Text ><br/><q>Programming is an art where mind  <br/>paints the logic on the Computer.... </q></Text>
+          <p>-Donald Knuth</p>
         </Box>
       </Box>
     </Box>
