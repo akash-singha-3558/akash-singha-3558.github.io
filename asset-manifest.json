@@ -1,18 +1,18 @@
 {
   "files": {
     "main.css": "/static/css/main.282f7e89.css",
-    "main.js": "/static/js/main.998fbdbd.js",
+    "main.js": "/static/js/main.06cf8b32.js",
     "static/js/787.128fc6e9.chunk.js": "/static/js/787.128fc6e9.chunk.js",
     "static/media/dp.png": "/static/media/dp.a122dcbbd38ceddc25ce.png",
     "static/media/Akash-Singha-Resume.pdf": "/static/media/Akash-Singha-Resume.0ebacc1099476c2a615c.pdf",
     "static/media/logo.png": "/static/media/logo.eef3e0aa7055d3a9f16a.png",
     "index.html": "/index.html",
     "main.282f7e89.css.map": "/static/css/main.282f7e89.css.map",
-    "main.998fbdbd.js.map": "/static/js/main.998fbdbd.js.map",
+    "main.06cf8b32.js.map": "/static/js/main.06cf8b32.js.map",
     "787.128fc6e9.chunk.js.map": "/static/js/787.128fc6e9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.282f7e89.css",
-    "static/js/main.998fbdbd.js"
+    "static/js/main.06cf8b32.js"
   ]
 }
