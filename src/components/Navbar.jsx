@@ -4,12 +4,12 @@ import {HashLink as Link} from "react-router-hash-link";
 import {BsList} from "react-icons/bs";
 import {  hamberger, responseElements } from "./styles";
 import { useState } from "react";
-
+import resume from "../Akash-Singha-Resume.pdf";
 const Navbar=()=>{
 const [show,setShow]=useState("none");
 return(
 <>
-<Flex id="nav-menu" position="fixed" top="0px" fontFamily="Roboto Mono, monospace" bg="black" color="white" flexDirection="row" border="1px solid black" w="100%" h="60px" justifyContent="space-around" alignItems="center" backgroundColor="black" borderBottom="1px solid grey"  zIndex="1000">
+<Flex id="nav-menu" position="fixed" top="0px" fontFamily="Roboto Mono, monospace" bg="black" color="white" flexDirection="row" boxShadow= 'rgb(36, 36, 58) 3px 3px 10px' w="100%" h="60px" justifyContent="space-around" alignItems="center" backgroundColor="black"   zIndex="1000">
 
 <Box h="100%">
 <Link to="#home" smooth>
@@ -33,9 +33,13 @@ return(
 <Text   display={responseElements} _hover={{color:"teal", borderBottomWidth:"2px", borderBottomColor:"teal"}} transition="0.4s"><span className="nav-link contact">Contact</span></Text>
 </Link>
 
-<Link to="#resume" smooth >
-<Text  display={responseElements} _hover={{color:"teal", borderBottomWidth:"2px", borderBottomColor:"teal"}} transition="0.4s"><span className="nav-link resume">Resume</span></Text>
-</Link>
+
+<a href={resume} download="Akash-Singha-Resume">
+<Text  onClick={()=>{
+             window.open('https://drive.google.com/file/d/1pRmYvib37ALHPrSjGKt6d6_XgbQEERK3/view?usp=sharing','_blank', 'noreferrer')
+              }} display={responseElements} _hover={{color:"teal", borderBottomWidth:"2px", borderBottomColor:"teal"}} transition="0.4s"><span className="nav-link resume">Resume</span></Text>
+</a>
+
 
 
 
@@ -48,8 +52,11 @@ setShow(show==="none"?"grid":"none")
 
 </Flex>
 
-<Box  fontFamily="Roboto Mono, monospace" position="fixed" w="100%" border="1px solid teal"  h="75vh" padding="100px" backgroundColor="black" display={show} gridTemplateColumns="repeat(1,1fr)" textAlign="center" color="white" zIndex="200">
-<div style={ {width:"100px",margin:"auto"}}>
+<Box  fontFamily="Roboto Mono, monospace" position="fixed" w="100%" boxShadow="rgb(36, 36, 58) 3px 3px 5px" borderRadius="20px" onClick={()=>{
+setShow(show==="none"?"grid":"none")
+
+}}  h="75vh" padding="100px" backgroundColor="black" display={show} gridTemplateColumns="repeat(1,1fr)" textAlign="center" color="white" zIndex="200">
+<div style={ {width:"100px",margin:"auto"}}  >
 <Link to="#home" smooth >
 <Button  onClick={()=>{
 setShow(show==="none"?"grid":"none")

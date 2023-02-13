@@ -88,17 +88,17 @@ export const ProjectsImageHeight=()=>({
     base:"auto",
     sm:"auto",
     md:"auto",
-    lg:"400px",
-    xl:"400px",
-    "2xl":"400px"
+    lg:"auto",
+    xl:"auto",
+    "2xl":"auto"
 })
 export const projects=()=>({
     base:"90%",
     sm:"90%",
     md:"90%",
-    lg:"45%",
-    xl:"45%",
-    "2xl":"45%"
+    lg:"50%",
+    xl:"50%%",
+    "2xl":"50%"
 })
 export const Direction=()=>({
     base:"column",

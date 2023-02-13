@@ -6,9 +6,11 @@ import React from "react";
 import { AiOutlineDownload } from "react-icons/ai";
 import Typical from "react-typical";
 import { HomeRightBoxHomeWidth,RightBoxHomeHeight, homeres, ImageBoxHomeHeight, ImageBoxHomeWidth, myNameIsRes } from "./styles";
+
 export const Home = () => {
 
   return (
+
     <Box
       h="100vh"
       bg="black"
@@ -23,7 +25,7 @@ export const Home = () => {
         '2xl': '0px'
       }}
       
-      
+      color="#8993b1"
       display="flex"
       flexDirection={homeres}
       justifyContent="space-between"
@@ -42,7 +44,7 @@ export const Home = () => {
         <Image src={dp}  width="70%" />
       </Box>
 {/* 35 */}
-      <Box h={RightBoxHomeHeight} w={HomeRightBoxHomeWidth}   justifyContent={["left","center",]} dispay="flex"  textAlign={myNameIsRes} m="auto"  color="white"  alignItems="stretch" display="flex" flexDirection={"column"} gap="15px"     fontSize={{
+      <Box h={RightBoxHomeHeight} w={HomeRightBoxHomeWidth}   justifyContent={["left","center",]} dispay="flex"  textAlign={myNameIsRes} m="auto"    alignItems="stretch" display="flex" flexDirection={"column"} gap="15px"     fontSize={{
       base:"16px", 
       sm: '16px',
       md: '25px',
@@ -68,7 +70,7 @@ export const Home = () => {
         xl: '75px',
         '2xl': '75px'
 
-    }} fontWeight="bold" color="teal">
+    }} fontWeight="bold" color="white">
           Akash Singha
         </Text>
         <Typical
@@ -94,6 +96,9 @@ export const Home = () => {
                 border: "1px solid white",
                 borderRadius:"20px"
               }}
+              onClick={()=>{
+             window.open('https://drive.google.com/file/d/1pRmYvib37ALHPrSjGKt6d6_XgbQEERK3/view?usp=sharing','_blank', 'noreferrer')
+              }}
             >
               See My Resume😇
               <AiOutlineDownload/>
@@ -114,5 +119,6 @@ export const Home = () => {
         </Box>
       </Box>
     </Box>
+
   );
 };
