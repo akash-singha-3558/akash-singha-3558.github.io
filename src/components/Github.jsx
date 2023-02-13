@@ -10,15 +10,15 @@ export const Github = () => {
           <GitHubCalendar class="react-activity-calendar" username="akash-singha-3558" theme={{level0 : "#161b22",level1 : "#39ff43c7",level2 : "#68e700c7",level3 : "#007e06",level4 : "#004e04c7"}} />
           </Box>
           <Box padding={{base:"5px", md:"30px"}} boxShadow="rgb(36, 36, 58) 3px 3px 5px" borderRadius="20px" width="70%"  >
-            <Text style={{base:"10px", md:"20px"}} >akash-singha-3558's streak</Text>
+            <Text style={{base:"10px", md:"20px"}} textAlign="center" >akash-singha-3558's streak</Text>
             <img id="github-streak-stats" style={{display:"block",margin:"auto"}} src="https://github-readme-streak-stats.herokuapp.com?user=akash-singha-3558&theme=vision-friendly-dark&hide_border=true"/>
           </Box>
           <Box padding={{base:"5px", md:"30px"}} boxShadow="rgb(36, 36, 58) 3px 3px 5px" borderRadius="20px" width="70%"  >
-            <Text style={{base:"10px", md:"20px"}} >akash-singha-3558's Github Stats</Text>
+            <Text style={{base:"10px", md:"20px"}} textAlign="center" >akash-singha-3558's Github Stats</Text>
             <img  id="github-stats-card" style={{display:"block",margin:"auto"}} src="https://github-readme-stats.vercel.app/api?username=akash-singha-3558&show_icons=true&theme=vision-friendly-dark&hide_border=true" />
           </Box>
           <Box padding={{base:"5px", md:"30px"}} boxShadow="rgb(36, 36, 58) 3px 3px 5px" borderRadius="20px" width="70%"  >
-            <Text style={{base:"10px", md:"20px"}} >akash-singha-3558's Top Languages</Text>
+            <Text style={{base:"10px", md:"20px"}} textAlign="center" >akash-singha-3558's Top Languages</Text>
             <img style={{display:"block",margin:"auto"}}  id="github-top-langs"  src="https://github-readme-stats.vercel.app/api/top-langs/?username=akash-singha-3558&layout=compact&theme=vision-friendly-dark&hide_border=true" />
           </Box>
        

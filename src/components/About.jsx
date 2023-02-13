@@ -6,8 +6,8 @@ export const About = () => {
  
     
    
-    <Box id="about"  className="about section"  h="auto" bg="black" w="100%" backgroundColor="black" color="#8993b1" fontFamily="Roboto Mono, monospace" >
-<br/>
+    <Box id="about"  w="100%" p="20px"  className="about section"  h="auto" bg="black" backgroundColor="black" color="#8993b1" fontFamily="Roboto Mono, monospace" >
+  
 
     <Box  boxShadow="rgb(36, 36, 58) 3px 3px 5px" borderRadius="20px" w="90%" h="100%"  display="flex" justifyContent="center" m="auto" alignItems="center" gap="15px" flexDirection={{base:"column",sm:"column",md:"column",lg:"row",xl:"row","2xl":"row"}} mt="40px">
      <Box w={{base:"70%",sm:"70%",md:"70%",lg:"45%",xl:"45%","2xl":"45%"}} h="50%" p="15px" display="flex" justifyContent="center" alignItems="center"   borderRadius="25px" >
