@@ -1,21 +1,18 @@
 {
   "files": {
-    "main.css": "/static/css/main.282f7e89.css",
-    "main.js": "/static/js/main.90cdaeea.js",
+    "main.css": "/static/css/main.fb35d48d.css",
+    "main.js": "/static/js/main.2e821a46.js",
     "static/js/787.128fc6e9.chunk.js": "/static/js/787.128fc6e9.chunk.js",
-    "static/media/jcrew.png": "/static/media/jcrew.12e26c96cc58de51ed67.png",
-    "static/media/fbag.png": "/static/media/fbag.b3a863f97a298e13f570.png",
-    "static/media/HTtimes.png": "/static/media/HTtimes.0ff6c66db93230a64e1c.png",
     "static/media/dp.png": "/static/media/dp.a122dcbbd38ceddc25ce.png",
     "static/media/Akash-Singha-Resume.pdf": "/static/media/Akash-Singha-Resume.0ebacc1099476c2a615c.pdf",
     "static/media/logo.png": "/static/media/logo.eef3e0aa7055d3a9f16a.png",
     "index.html": "/index.html",
-    "main.282f7e89.css.map": "/static/css/main.282f7e89.css.map",
-    "main.90cdaeea.js.map": "/static/js/main.90cdaeea.js.map",
+    "main.fb35d48d.css.map": "/static/css/main.fb35d48d.css.map",
+    "main.2e821a46.js.map": "/static/js/main.2e821a46.js.map",
     "787.128fc6e9.chunk.js.map": "/static/js/787.128fc6e9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.282f7e89.css",
-    "static/js/main.90cdaeea.js"
+    "static/css/main.fb35d48d.css",
+    "static/js/main.2e821a46.js"
   ]
 }
