@@ -1,7 +1,7 @@
 import { Box, Center,Text,Flex } from '@chakra-ui/react';
 import React from 'react';
-import Calender from './Calender';
-import Stats from './Stats';
+
+
 // import GitHubCalendar from "react-github-calendar";
 import { Tooltip as ReactTooltip } from 'react-tooltip'
 import { Direction, projects, ProjectsImageHeight } from './styles';
@@ -14,7 +14,7 @@ import { Direction, projects, ProjectsImageHeight } from './styles';
 
 <Flex boxShadow="rgb(36, 36, 58) 3px 3px 5px"  className="project-card" borderRadius="20px" flexDirection={Direction} m="auto" justifyContent="center" w="80%" h="auto" mt="10px"  p="20px" gap="20px">
 <Box  w={projects} h={ProjectsImageHeight}  m="auto" borderRadius="15px" display="flex" justifyContent="center" alignItems="center">
-<img style={{width:"100%",height:"auto",borderTopLeftRadius:"15px",borderBottomLeftRadius:"15px"}} src="https://github.com/akash-singha-3558/Mytheresa.com-clone/raw/main/Screenshot%20(220).png"/>
+<img style={{width:"100%",height:"auto",borderTopLeftRadius:"15px",borderBottomLeftRadius:"15px"}} src={"https://user-images.githubusercontent.com/112806398/218574826-5ff01d90-6eeb-43cd-8829-3b43eaf9dcd7.png"}/>
 </Box>
 <Box  w={projects} h={ProjectsImageHeight} m="auto"  display="flex" flexDirection={"column"} justifyContent="center" borderRadius="15px" p="5px" gap="10px" >
 <Text className="project-title" textAlign="right" fontSize="20px" borderBottom="2px solid teal">Mytheresa.com</Text>
@@ -37,7 +37,7 @@ import { Direction, projects, ProjectsImageHeight } from './styles';
 
 <Flex boxShadow="rgb(36, 36, 58) 3px 3px 5px"  className="project-card" borderRadius="20px" flexDirection={Direction} m="auto" justifyContent="center" w="80%" h="auto" mt="10px"  p="20px" gap="20px">
 <Box  w={projects} h={ProjectsImageHeight}   m="auto" borderRadius="15px" display="flex" justifyContent="center" alignItems="center">
-<img style={{width:"100%",height:"auto",borderTopLeftRadius:"15px",borderBottomLeftRadius:"15px"}} src="https://github.com/Dante2109/enormous-step-3337/blob/master/readmePhotos/jcrew-home.png?raw=true"/>
+<img style={{width:"100%",height:"auto",borderTopLeftRadius:"15px",borderBottomLeftRadius:"15px"}} src={"https://user-images.githubusercontent.com/112806398/218574989-3d257a6c-7144-424e-a15c-595c4793c564.png"}/>
 </Box>
 <Box  w={projects} h={ProjectsImageHeight} m="auto"  display="flex" flexDirection={"column"} justifyContent="center" borderRadius="15px" p="5px" gap="10px" >
 <Text className="project-title" textAlign="right" fontSize="20px" borderBottom="2px solid teal">JCREW.com</Text>
@@ -57,7 +57,7 @@ import { Direction, projects, ProjectsImageHeight } from './styles';
 
 <Flex boxShadow="rgb(36, 36, 58) 3px 3px 5px"  className="project-card" borderRadius="20px" flexDirection={Direction} m="auto" justifyContent="center" w="80%" h="auto" mt="10px"  p="20px" gap="20px">
 <Box  w={projects} h={ProjectsImageHeight}   m="auto" borderRadius="15px" display="flex" justifyContent="center" alignItems="center">
-<img style={{width:"100%",height:"auto",borderTopLeftRadius:"15px",borderBottomLeftRadius:"15px"}} src="https://user-images.githubusercontent.com/112806398/211392919-7943dfe1-ffc0-4bb7-aa6f-15e5a04835f9.png"/>
+<img style={{width:"100%",height:"auto",borderTopLeftRadius:"15px",borderBottomLeftRadius:"15px"}} src={"https://user-images.githubusercontent.com/112806398/218575109-072ebab5-28d2-4baa-beda-41fce5ab9920.png"}/>
 </Box>
 <Box  w={projects} h={ProjectsImageHeight} m="auto"  display="flex" flexDirection={"column"} justifyContent="center" borderRadius="15px" p="5px" gap="10px" >
 <Text className="project-title" textAlign="right" fontSize="20px" borderBottom="2px solid teal">Hindustan Times</Text>
@@ -105,10 +105,7 @@ import { Direction, projects, ProjectsImageHeight } from './styles';
 
 
 </Box>
-<Center><Text mt="20" borderBottom="2px solid teal" p="5px"> Github Stats</Text></Center> 
-<div style={{marginTop:"20px"}}>
-<Stats />
-</div>
+
 </Box>
   )
 }

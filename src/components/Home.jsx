@@ -41,7 +41,7 @@ export const Home = () => {
          
      
       >
-        <Image src={dp}  width="70%" />
+        <Image src={dp} className="home-img" width="70%" />
       </Box>
 {/* 35 */}
       <Box h={RightBoxHomeHeight} w={HomeRightBoxHomeWidth}   justifyContent={["left","center",]} dispay="flex"  textAlign={myNameIsRes} m="auto"    alignItems="stretch" display="flex" flexDirection={"column"} gap="15px"     fontSize={{
@@ -85,11 +85,12 @@ export const Home = () => {
         />
         {/* <Box justifyContent={"center"} m="auto"> */}
           
-          <a href={resume} download="Akash-Singha-Resume">
+          <a href={resume} download="Akash-Singha-Resume" >
             <Button
               bg="white"
               color="black"
               borderRadius="15px"
+              id="resume-button-2"
               _hover={{
                 color: "white",
                 bg: "black",

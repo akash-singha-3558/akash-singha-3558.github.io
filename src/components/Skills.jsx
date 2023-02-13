@@ -10,7 +10,7 @@ export const Skills = () => {
       bg="black"
       w="100%"
       id="skills"
-      mt="20px"
+  
       color="white" fontFamily="Roboto Mono, monospace"
  
     >

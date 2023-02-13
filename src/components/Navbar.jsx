@@ -35,9 +35,9 @@ return(
 
 
 <a href={resume} download="Akash-Singha-Resume">
-<Text  onClick={()=>{
+<Button  color="white" bg="black" border="1px solid white" id="resume-button-1" onClick={()=>{
              window.open('https://drive.google.com/file/d/1pRmYvib37ALHPrSjGKt6d6_XgbQEERK3/view?usp=sharing','_blank', 'noreferrer')
-              }} display={responseElements} _hover={{color:"teal", borderBottomWidth:"2px", borderBottomColor:"teal"}} transition="0.4s"><span className="nav-link resume">Resume</span></Text>
+              }} display={responseElements} _hover={{color:"black", bg:"white" }} transition="0.4s"><span className="nav-link resume">Resume</span></Button>
 </a>
 
 

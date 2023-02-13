@@ -8,7 +8,7 @@ export const Contact = () => {
     bg="black"
     w="100%" id="contact"   color="white" fontFamily="Roboto Mono, monospace">
     
-    <Center> <Text  borderBottom="2px solid teal" p="5px" fontSize="22px" mt="100px">Contact</Text></Center>
+    <Center> <Text  borderBottom="2px solid teal" p="5px" fontSize="22px" mt="100px">Get In Touch</Text></Center>
     
     </Box>
   )
