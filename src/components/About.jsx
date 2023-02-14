@@ -2,6 +2,14 @@ import { Box, Center, Text,Image } from '@chakra-ui/react'
 import React from 'react'
 
 export const About = () => {
+  const text=()=>({
+    base:"center",
+    sm:"center",
+    md:"left",
+    lg:"left",
+    xl:"left",
+    "2xl":"left"
+  })
   return (
  
     

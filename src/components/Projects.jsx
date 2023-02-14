@@ -6,6 +6,14 @@ import React from 'react';
 import { Tooltip as ReactTooltip } from 'react-tooltip'
 import { Direction, projects, ProjectsImageHeight } from './styles';
  const Projects = () => {
+  const text=()=>({
+    base:"left",
+    sm:"left",
+    md:"right",
+    lg:"right",
+    xl:"right",
+    "2xl":"right"
+  })
   return (
     <Box id="projects"  h="auto" bg="black" w="100%" fontFamily="Roboto Mono, monospace" color="white" fontSize="22px">
       <Center><Text mt="20" borderBottom="2px solid teal" p="5px"> Projects</Text></Center> 
@@ -17,9 +25,9 @@ import { Direction, projects, ProjectsImageHeight } from './styles';
 <img style={{width:"100%",height:"auto",borderTopLeftRadius:"15px",borderBottomLeftRadius:"15px"}} src={"https://user-images.githubusercontent.com/112806398/218574826-5ff01d90-6eeb-43cd-8829-3b43eaf9dcd7.png"}/>
 </Box>
 <Box  w={projects} h={ProjectsImageHeight} m="auto"  display="flex" flexDirection={"column"} justifyContent="center" borderRadius="15px" p="5px" gap="10px" >
-<Text className="project-title" textAlign="right" fontSize="20px" borderBottom="2px solid teal">Mytheresa.com</Text>
-<Text textAlign="right" fontSize="16px" mt="5px" color="#8993b1" className="project-description"> This is my Construct Week Project and the assigned website for me was MYTHERESA - an international clothing brand. This project uses CHAKRA UI, REACT JS to shocase the functioning of an E-Commerce website. The maain objective of the project was to make the user have an easier experience shopping and maintain the clean design.</Text>
-<Text fontSize="16px" className="project-tech-stack" textAlign="right"><span style={{color:"teal"}}>Tech Stacks Used : </span> React Js, Chakra Ui</Text>
+<Text className="project-title" textAlign={text()} fontSize="20px" borderBottom="2px solid teal">Mytheresa.com</Text>
+<Text textAlign={text()} fontSize="16px" mt="5px" color="#8993b1" className="project-description"> This is my Construct Week Project and the assigned website for me was MYTHERESA - an international clothing brand. This project uses CHAKRA UI, REACT JS to shocase the functioning of an E-Commerce website. The maain objective of the project was to make the user have an easier experience shopping and maintain the clean design.</Text>
+<Text fontSize="16px" className="project-tech-stack" textAlign={text()}><span style={{color:"teal"}}>Tech Stacks Used : </span> React Js, Chakra Ui</Text>
 <Box w="100%" display="flex" justifyContent={"flex-end"}  p="10px" gap="2px" >
 
     <a className="project-github-link" href="https://github.com/akash-singha-3558/Mytheresa.com-clone"><img  src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" style={{width:"30px",margin:"auto"}}/></a>
@@ -40,9 +48,9 @@ import { Direction, projects, ProjectsImageHeight } from './styles';
 <img style={{width:"100%",height:"auto",borderTopLeftRadius:"15px",borderBottomLeftRadius:"15px"}} src={"https://user-images.githubusercontent.com/112806398/218574989-3d257a6c-7144-424e-a15c-595c4793c564.png"}/>
 </Box>
 <Box  w={projects} h={ProjectsImageHeight} m="auto"  display="flex" flexDirection={"column"} justifyContent="center" borderRadius="15px" p="5px" gap="10px" >
-<Text className="project-title" textAlign="right" fontSize="20px" borderBottom="2px solid teal">JCREW.com</Text>
-<Text textAlign="right" fontSize="16px" mt="5px" color="#8993b1" className="project-description"> This is our Construct Week Project and the assigned website for our group was JCREW - an international clothing brand. This project uses HTML, CSS, Javascript to showcase the functioning of an E-Commerce website. The main objective of the project was to make the user have an easier experience shopping and maintain the clean design.</Text>
-<Text fontSize="16px" className="project-tech-stack" textAlign="right"><span style={{color:"teal"}}>Tech Stacks Used : </span> HTML, CSS , Javascript</Text>
+<Text className="project-title" textAlign={text()} fontSize="20px" borderBottom="2px solid teal">JCREW.com</Text>
+<Text textAlign={text()} fontSize="16px" mt="5px" color="#8993b1" className="project-description"> This is our Construct Week Project and the assigned website for our group was JCREW - an international clothing brand. This project uses HTML, CSS, Javascript to showcase the functioning of an E-Commerce website. The main objective of the project was to make the user have an easier experience shopping and maintain the clean design.</Text>
+<Text fontSize="16px" className="project-tech-stack" textAlign={text()}><span style={{color:"teal"}}>Tech Stacks Used : </span> HTML, CSS , Javascript</Text>
 <Box w="100%" display="flex" justifyContent={"flex-end"}  p="10px" gap="2px" >
 
 <a className="project-github-link"  href="https://github.com/Dante2109/enormous-step-3337"><img  src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" style={{width:"30px",margin:"auto"}}/></a>
@@ -60,9 +68,9 @@ import { Direction, projects, ProjectsImageHeight } from './styles';
 <img style={{width:"100%",height:"auto",borderTopLeftRadius:"15px",borderBottomLeftRadius:"15px"}} src={"https://user-images.githubusercontent.com/112806398/218575109-072ebab5-28d2-4baa-beda-41fce5ab9920.png"}/>
 </Box>
 <Box  w={projects} h={ProjectsImageHeight} m="auto"  display="flex" flexDirection={"column"} justifyContent="center" borderRadius="15px" p="5px" gap="10px" >
-<Text className="project-title" textAlign="right" fontSize="20px" borderBottom="2px solid teal">Hindustan Times</Text>
-<Text textAlign="right" fontSize="16px" mt="5px" color="#8993b1" className="project-description"> This is my Construct Week Project and the assigned website for me was Hindustantimes -is an Indian English-language daily newspaper based in Delhi. This project uses HTML, CSS, Javascript to showcase the functioning of an newspaper website. The main objective of the project was to make the user have an easier experience to read the newpaper and gather information.</Text>
-<Text fontSize="16px" className="project-tech-stack" textAlign="right"><span style={{color:"teal"}}>Tech Stacks Used : </span> HTML, CSS , Javascript</Text>
+<Text className="project-title" textAlign={text()} fontSize="20px" borderBottom="2px solid teal">Hindustan Times</Text>
+<Text textAlign={text()} fontSize="16px" mt="5px" color="#8993b1" className="project-description"> This is my Construct Week Project and the assigned website for me was Hindustantimes -is an Indian English-language daily newspaper based in Delhi. This project uses HTML, CSS, Javascript to showcase the functioning of an newspaper website. The main objective of the project was to make the user have an easier experience to read the newpaper and gather information.</Text>
+<Text fontSize="16px" className="project-tech-stack" textAlign={text()}><span style={{color:"teal"}}>Tech Stacks Used : </span> HTML, CSS , Javascript</Text>
 <Box w="100%" display="flex" justifyContent={"flex-end"}  p="10px" gap="2px" >
 
 <a className="project-github-link" href="https://github.com/akash-singha-3558/proud-wax-6546"><img  src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" style={{width:"30px",margin:"auto"}}/></a>
