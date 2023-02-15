@@ -30,6 +30,7 @@ export const Home = () => {
       flexDirection={homeres}
       justifyContent="space-between"
       fontFamily="Roboto Mono, monospace"
+    
     >
       <Box
         h={ImageBoxHomeHeight}
@@ -85,7 +86,7 @@ export const Home = () => {
         />
         {/* <Box justifyContent={"center"} m="auto"> */}
           
-          <a href={resume} download="Akash-Singha-Resume" >
+          <a href={resume} download="Akash-Singha-Resume"  id="resume-link-1" >
             <Button
               bg="white"
               color="black"

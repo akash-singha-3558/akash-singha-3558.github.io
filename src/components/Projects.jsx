@@ -20,13 +20,44 @@ import { Direction, projects, ProjectsImageHeight } from './styles';
 <Box display="grid" gridTemplateColumns="repeat(1,1fr)" h="100%" w="100%" m="auto" gap="10px">
 
 
+
+<Flex boxShadow="rgb(36, 36, 58) 3px 3px 5px"  className="project-card" borderRadius="20px" flexDirection={Direction} m="auto" justifyContent="center" w="80%" h="auto" mt="10px"  p="20px" gap="20px">
+<Box  w={projects} h={ProjectsImageHeight}  m="auto" borderRadius="15px" display="flex" justifyContent="center" alignItems="center">
+<img style={{width:"100%",height:"auto",borderTopLeftRadius:"15px",borderBottomLeftRadius:"15px"}} src={"https://user-images.githubusercontent.com/112806398/218826851-cea0a4fa-7c22-4fb9-bbe1-3cfc5cd1cf28.png"}/>
+</Box>
+<Box  w={projects} h={ProjectsImageHeight} m="auto"  display="flex" flexDirection={"column"} justifyContent="center" borderRadius="15px" p="5px" gap="10px" >
+<Text className="project-title" textAlign={text()} fontSize="20px" borderBottom="2px solid teal">Flipkart.com</Text>
+<Text textAlign={text()} fontSize="16px" mt="5px" color="#8993b1" className="project-description"> This is our Construct Week Project and the assigned website for us was Fliplart.com - an E-commerce website. This project uses React JS, Chakra Ui, React Redux,Redux Thunk to showcase the functioning of an E-Commerce website. The maain objective of the project was to make the user have an easier experience shopping and maintain the clean design.</Text>
+<Text fontSize="16px" className="project-tech-stack" textAlign={text()}><span style={{color:"teal"}}>Tech Stacks Used : </span> React JS, Chakra Ui, React Redux,Redux Thunk</Text>
+<Box w="100%" display="flex" justifyContent={"flex-end"}  p="10px" gap="2px" >
+
+    <a className="project-github-link" href="https://github.com/YashSharma7746/lying-flesh-4692"><img  src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" style={{width:"30px",margin:"auto"}}/></a>
+    <a href="https://spiffy-crostata-d83d60.netlify.app/" className="project-deployed-link"><img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAFwAXAMBIgACEQEDEQH/xAAcAAEAAgIDAQAAAAAAAAAAAAAABQcDBgECBAj/xABDEAABAwMBBAIMCQ0AAAAAAAABAAIDBAUGEQcSIUExUSIyNjdhcXN1gpGysxUXI0JTobHS4QgTFFJVY3SBkpOUotH/xAAWAQEBAQAAAAAAAAAAAAAAAAAAAQL/xAAZEQEBAAMBAAAAAAAAAAAAAAAAAQIRMSH/2gAMAwEAAhEDEQA/ALuREQEREBERAREQEREBERAREQFyoLOu4nIfNdT7pyrHBNk2N5BiVtutc+uFTUxlzxFM1rdd4jgN09SC69Fwqz+I7Evpbn/fb9xSWNbKsdxu9013t0leamn3twSzNLeyaWnUBo5OKonbrmWN2iqkpbleaSnqI9N+J7+yGo1HDxKGqNrOFQkj4XMhH0dLK7X+e7oq2245NZLvXx26gpWT11E4tluDXaBvXENO249OvQejmqrWpjuM3LT6sxPOrPltXU09mFU8UzA+WWSHcYNToBxOup0PLkVs6rzYbZDasKZWSt0nuchqDqOIZ2rB6hvekrDWa0IiKAiIgg867ich811PunKM2Sd7mx+Rd7blJ513E5D5rqfdOUZsk73Nj8i723INvWk7XskmxvD5X0byysrHimheOlmoJc4eENB08JC3ZVF+UZG82SzSjtG1b2nxlnD7CrOpeKdxnH6/JbtDa7VEHSv4uc7g2Ng6XOPID8FZWR7FZKOitfwRVy1U76hkNc5zQAGvcB+caOQbx1HHgdeS3LYjjkdnxGO4yMH6ZdPlnOPSI/mN8WnZekvXkF8udJtRxmz09UWW+sgmfUQ7jTvlrXkcSNR0DoK1cvfEmLc6WnipKWGmp2BkMLGxxtHJoGgCyoiw0IiICIiCDzruJyHzXU+6cozZJ3ubH5F3tuUpnDS7C8ga0EuNsqQABxPyTlWmDbS7dj2J2601lovL56aMte6KlBadXE8NSDzVguZaVthsz7zgNwbC3enpNKqP0O2/0LlF/HJZv2Jfv8Vv3lw7bFZXtLXWO+lpGhBpG8R/UmqjfbJBHS2agp4RpHFTRsaByAaAFoeVd+rDv4Wo9iRY6fa9ZKenigjsl/3I2BjdaVpOgGn6yh4Mlhy3a1jFdQ0Fwp4aaKeOQ1UO7xMbzyJCaqrlREUBERAREQE18KLqQSg7b3hXG+OtYXxvPQV530sxPCYhB794daa+FeSOCRvS8lZ2sI6SgyIgRAREQEXdEHRFirJXQxscwDUysbx6i4A/asbKh7qySEhu60ag6cfm/wDUHpRYTM7emGg7ADT1LmCV0kET3AavYHH1IMqLx3OrkpKeOWNrS50gad4cNOKiKa/1UpG9HANWg8AeZiHX+8P1INjRQYvNQYY37kWrmBx4HmyR3X1sH1qeCDqi7og//9k=" style={{width:"30px",margin:"auto"}}/></a>
+  
+</Box>
+</Box>
+</Flex>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 <Flex boxShadow="rgb(36, 36, 58) 3px 3px 5px"  className="project-card" borderRadius="20px" flexDirection={Direction} m="auto" justifyContent="center" w="80%" h="auto" mt="10px"  p="20px" gap="20px">
 <Box  w={projects} h={ProjectsImageHeight}  m="auto" borderRadius="15px" display="flex" justifyContent="center" alignItems="center">
 <img style={{width:"100%",height:"auto",borderTopLeftRadius:"15px",borderBottomLeftRadius:"15px"}} src={"https://user-images.githubusercontent.com/112806398/218574826-5ff01d90-6eeb-43cd-8829-3b43eaf9dcd7.png"}/>
 </Box>
 <Box  w={projects} h={ProjectsImageHeight} m="auto"  display="flex" flexDirection={"column"} justifyContent="center" borderRadius="15px" p="5px" gap="10px" >
 <Text className="project-title" textAlign={text()} fontSize="20px" borderBottom="2px solid teal">Mytheresa.com</Text>
-<Text textAlign={text()} fontSize="16px" mt="5px" color="#8993b1" className="project-description"> This is my Construct Week Project and the assigned website for me was MYTHERESA - an international clothing brand. This project uses CHAKRA UI, REACT JS to shocase the functioning of an E-Commerce website. The maain objective of the project was to make the user have an easier experience shopping and maintain the clean design.</Text>
+<Text textAlign={text()} fontSize="16px" mt="5px" color="#8993b1" className="project-description"> This is my Construct Week Project and the assigned website for me was MYTHERESA - an international clothing brand. This project uses React Js, Chakra Ui to shoWcase the functioning of an E-Commerce website. The main objective of the project was to make the user have an easier experience shopping and maintain the clean design.</Text>
 <Text fontSize="16px" className="project-tech-stack" textAlign={text()}><span style={{color:"teal"}}>Tech Stacks Used : </span> React Js, Chakra Ui</Text>
 <Box w="100%" display="flex" justifyContent={"flex-end"}  p="10px" gap="2px" >
 
