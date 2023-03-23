@@ -84,9 +84,9 @@ export const Home = () => {
           loop={Infinity}
           wrapper="p"
         />
-        {/* <Box justifyContent={"center"} m="auto"> */}
+        {/* <Box justifyContent={"flex-Start"} m="auto"> */}
           
-          <a href={resume} download="Akash-Singha-Resume"  id="resume-link-1" >
+          <a href={resume} download="Akash-Singha-Resume"  id="resume-link-2" >
             <Button
               bg="white"
               color="black"

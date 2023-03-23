@@ -26,9 +26,9 @@ const Navbar = () => {
         zIndex="1000"
       >
         <Box h="100%">
-          <Link to="#home" smooth>
+         
             <Image src={logo} h="100%" />
-          </Link>
+         
         </Box>
 
         <Link to="#home" smooth>
@@ -177,7 +177,7 @@ const Navbar = () => {
           </Link>
         </div>
         <div style={{ width: "100px", margin: "auto" }}>
-          <Link to="#Skills" smooth>
+          <Link to="#skills" smooth>
             <Button
               onClick={() => {
                 setShow(show === "none" ? "grid" : "none");
@@ -222,21 +222,7 @@ const Navbar = () => {
           </Link>
         </div>
 
-        <div style={{ width: "100px", margin: "auto" }}>
-          <Link to="#resume" smooth>
-            <Button
-              onClick={() => {
-                setShow(show === "none" ? "grid" : "none");
-              }}
-              _hover={{ color: "black", bg: "white" }}
-              border="1px solid white"
-              bg="black"
-              w="80px"
-            >
-              Contact
-            </Button>
-          </Link>
-        </div>
+        
       </Box>
     </>
   );
