@@ -97,7 +97,7 @@ const Navbar = () => {
           </Text>
         </Link>
 
-        <a href={resume} download="Akash-Singha-Resume" id="resume-link-1">
+        
           <Button
             color="white"
             bg="black"
@@ -113,10 +113,13 @@ const Navbar = () => {
             display={responseElements}
             _hover={{ color: "black", bg: "white" }}
             transition="0.4s"
+            className="nav-link resume"
           >
-            <span className="nav-link resume">Resume</span>
+            <a href={resume} download="Akash-Singha-Resume" id="resume-link-1"> Resume</a>
+          
+           
           </Button>
-        </a>
+      
 
         <Box display={hamberger}>
           <BsList
@@ -221,7 +224,50 @@ const Navbar = () => {
             </Button>
           </Link>
         </div>
+        <div style={{ width: "100px", margin: "auto" }}>
+      
+            <Button
+              
+              onClick={() => {
+                window.open(
+                  "https://drive.google.com/file/d/1pRmYvib37ALHPrSjGKt6d6_XgbQEERK3/view?usp=sharing",
+                  "_blank",
+                  "noreferrer"
+                );
+                setShow(show === "none" ? "grid" : "none");
 
+              }}
+              _hover={{ color: "black", bg: "white" }}
+              border="1px solid white"
+              bg="black"
+              w="80px"
+              className="nav-link resume"
+            >
+                <a href={resume} download="Akash-Singha-Resume" id="resume-link-1">Resume</a>
+         
+            </Button>
+            
+{/*         
+            <a href={resume} download="Akash-Singha-Resume" id="resume-link-1">
+          <Button
+            color="white"
+            bg="black"
+            border="1px solid white"
+            id="resume-button-1"
+            onClick={() => {
+             
+              setShow(show === "none" ? "grid" : "none");
+            }}
+            display={responseElements}
+            _hover={{ color: "black", bg: "white" }}
+            transition="0.4s"
+          >
+            <span className="nav-link resume">Resume</span>
+          </Button>
+        </a> */}
+
+
+        </div>
         
       </Box>
     </>
