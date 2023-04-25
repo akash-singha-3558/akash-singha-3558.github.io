@@ -1,10 +1,17 @@
 import { Box, Center, Text, Flex } from "@chakra-ui/react";
-import React from "react";
 
+import React, { useEffect } from "react";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 // import GitHubCalendar from "react-github-calendar";
 import { Tooltip as ReactTooltip } from "react-tooltip";
 import { Direction, projects, ProjectsImageHeight } from "./styles";
 const Projects = () => {
+
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
   const text = () => ({
     base: "left",
     sm: "left",
@@ -36,6 +43,7 @@ const Projects = () => {
         w="100%"
         m="auto"
         gap="10px"
+
       >
 
         <Flex
@@ -50,6 +58,10 @@ const Projects = () => {
           mt="10px"
           p="20px"
           gap="20px"
+          data-aos="fade-right"
+          data-aos-offset="500"
+          data-aos-easing="ease-in-sine"
+
         >
           <Box
             w={projects}
@@ -61,6 +73,7 @@ const Projects = () => {
             alignItems="center"
           >
             <img
+              alt="project"
               style={{
                 width: "100%",
                 height: "auto",
@@ -122,6 +135,7 @@ const Projects = () => {
                 href="https://github.com/khanahmad4527/luxefemme"
               >
                 <img
+                  alt="project"
                   src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png"
                   style={{ width: "30px", margin: "auto" }}
                 />
@@ -131,12 +145,14 @@ const Projects = () => {
                 className="project-deployed-link"
               >
                 <img
+                  alt="project"
                   src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAFwAXAMBIgACEQEDEQH/xAAcAAEAAgIDAQAAAAAAAAAAAAAABQcDBgECBAj/xABDEAABAwMBBAIMCQ0AAAAAAAABAAIDBAUGEQcSIUExUSIyNjdhcXN1gpGysxUXI0JTobHS4QgTFFJVY3SBkpOUotH/xAAWAQEBAQAAAAAAAAAAAAAAAAAAAQL/xAAZEQEBAAMBAAAAAAAAAAAAAAAAAQIRMSH/2gAMAwEAAhEDEQA/ALuREQEREBERAREQEREBERAREQFyoLOu4nIfNdT7pyrHBNk2N5BiVtutc+uFTUxlzxFM1rdd4jgN09SC69Fwqz+I7Evpbn/fb9xSWNbKsdxu9013t0leamn3twSzNLeyaWnUBo5OKonbrmWN2iqkpbleaSnqI9N+J7+yGo1HDxKGqNrOFQkj4XMhH0dLK7X+e7oq2245NZLvXx26gpWT11E4tluDXaBvXENO249OvQejmqrWpjuM3LT6sxPOrPltXU09mFU8UzA+WWSHcYNToBxOup0PLkVs6rzYbZDasKZWSt0nuchqDqOIZ2rB6hvekrDWa0IiKAiIgg867ich811PunKM2Sd7mx+Rd7blJ513E5D5rqfdOUZsk73Nj8i723INvWk7XskmxvD5X0byysrHimheOlmoJc4eENB08JC3ZVF+UZG82SzSjtG1b2nxlnD7CrOpeKdxnH6/JbtDa7VEHSv4uc7g2Ng6XOPID8FZWR7FZKOitfwRVy1U76hkNc5zQAGvcB+caOQbx1HHgdeS3LYjjkdnxGO4yMH6ZdPlnOPSI/mN8WnZekvXkF8udJtRxmz09UWW+sgmfUQ7jTvlrXkcSNR0DoK1cvfEmLc6WnipKWGmp2BkMLGxxtHJoGgCyoiw0IiICIiCDzruJyHzXU+6cozZJ3ubH5F3tuUpnDS7C8ga0EuNsqQABxPyTlWmDbS7dj2J2601lovL56aMte6KlBadXE8NSDzVguZaVthsz7zgNwbC3enpNKqP0O2/0LlF/HJZv2Jfv8Vv3lw7bFZXtLXWO+lpGhBpG8R/UmqjfbJBHS2agp4RpHFTRsaByAaAFoeVd+rDv4Wo9iRY6fa9ZKenigjsl/3I2BjdaVpOgGn6yh4Mlhy3a1jFdQ0Fwp4aaKeOQ1UO7xMbzyJCaqrlREUBERAREQE18KLqQSg7b3hXG+OtYXxvPQV530sxPCYhB794daa+FeSOCRvS8lZ2sI6SgyIgRAREQEXdEHRFirJXQxscwDUysbx6i4A/asbKh7qySEhu60ag6cfm/wDUHpRYTM7emGg7ADT1LmCV0kET3AavYHH1IMqLx3OrkpKeOWNrS50gad4cNOKiKa/1UpG9HANWg8AeZiHX+8P1INjRQYvNQYY37kWrmBx4HmyR3X1sH1qeCDqi7og//9k="
                   style={{ width: "30px", margin: "auto" }}
                 />
               </a>
               {/* <a href="https://drive.google.com/file/d/1rpN5YCXBo8jhzWvSTejviytUvIYpScVD/view">
-                <img
+                <img 
+                alt="project"
                   src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpIadaB-dkMxZYRZ-7SmMEisV7pIk0IpNrmyu7GXM&s"
                   style={{ width: "30px", margin: "auto" }}
                 />
@@ -166,6 +182,11 @@ const Projects = () => {
           mt="10px"
           p="20px"
           gap="20px"
+          data-aos='fade-right'
+          data-aos-offset='300'
+          data-aos-easing='ease-in-sine'
+          data-aos-duration='700'
+
         >
           <Box
             w={projects}
@@ -177,6 +198,7 @@ const Projects = () => {
             alignItems="center"
           >
             <img
+              alt="project"
               style={{
                 width: "100%",
                 height: "auto",
@@ -242,6 +264,7 @@ const Projects = () => {
                 href="https://github.com/Namrata0407/murky-pan-2202"
               >
                 <img
+                  alt="project"
                   src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png"
                   style={{ width: "30px", margin: "auto" }}
                 />
@@ -251,12 +274,14 @@ const Projects = () => {
                 className="project-deployed-link"
               >
                 <img
+                  alt="project"
                   src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAFwAXAMBIgACEQEDEQH/xAAcAAEAAgIDAQAAAAAAAAAAAAAABQcDBgECBAj/xABDEAABAwMBBAIMCQ0AAAAAAAABAAIDBAUGEQcSIUExUSIyNjdhcXN1gpGysxUXI0JTobHS4QgTFFJVY3SBkpOUotH/xAAWAQEBAQAAAAAAAAAAAAAAAAAAAQL/xAAZEQEBAAMBAAAAAAAAAAAAAAAAAQIRMSH/2gAMAwEAAhEDEQA/ALuREQEREBERAREQEREBERAREQFyoLOu4nIfNdT7pyrHBNk2N5BiVtutc+uFTUxlzxFM1rdd4jgN09SC69Fwqz+I7Evpbn/fb9xSWNbKsdxu9013t0leamn3twSzNLeyaWnUBo5OKonbrmWN2iqkpbleaSnqI9N+J7+yGo1HDxKGqNrOFQkj4XMhH0dLK7X+e7oq2245NZLvXx26gpWT11E4tluDXaBvXENO249OvQejmqrWpjuM3LT6sxPOrPltXU09mFU8UzA+WWSHcYNToBxOup0PLkVs6rzYbZDasKZWSt0nuchqDqOIZ2rB6hvekrDWa0IiKAiIgg867ich811PunKM2Sd7mx+Rd7blJ513E5D5rqfdOUZsk73Nj8i723INvWk7XskmxvD5X0byysrHimheOlmoJc4eENB08JC3ZVF+UZG82SzSjtG1b2nxlnD7CrOpeKdxnH6/JbtDa7VEHSv4uc7g2Ng6XOPID8FZWR7FZKOitfwRVy1U76hkNc5zQAGvcB+caOQbx1HHgdeS3LYjjkdnxGO4yMH6ZdPlnOPSI/mN8WnZekvXkF8udJtRxmz09UWW+sgmfUQ7jTvlrXkcSNR0DoK1cvfEmLc6WnipKWGmp2BkMLGxxtHJoGgCyoiw0IiICIiCDzruJyHzXU+6cozZJ3ubH5F3tuUpnDS7C8ga0EuNsqQABxPyTlWmDbS7dj2J2601lovL56aMte6KlBadXE8NSDzVguZaVthsz7zgNwbC3enpNKqP0O2/0LlF/HJZv2Jfv8Vv3lw7bFZXtLXWO+lpGhBpG8R/UmqjfbJBHS2agp4RpHFTRsaByAaAFoeVd+rDv4Wo9iRY6fa9ZKenigjsl/3I2BjdaVpOgGn6yh4Mlhy3a1jFdQ0Fwp4aaKeOQ1UO7xMbzyJCaqrlREUBERAREQE18KLqQSg7b3hXG+OtYXxvPQV530sxPCYhB794daa+FeSOCRvS8lZ2sI6SgyIgRAREQEXdEHRFirJXQxscwDUysbx6i4A/asbKh7qySEhu60ag6cfm/wDUHpRYTM7emGg7ADT1LmCV0kET3AavYHH1IMqLx3OrkpKeOWNrS50gad4cNOKiKa/1UpG9HANWg8AeZiHX+8P1INjRQYvNQYY37kWrmBx4HmyR3X1sH1qeCDqi7og//9k="
                   style={{ width: "30px", margin: "auto" }}
                 />
               </a>
               {/* <a href="https://drive.google.com/file/d/1rpN5YCXBo8jhzWvSTejviytUvIYpScVD/view">
-                <img
+                <img 
+                alt="project"
                   src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpIadaB-dkMxZYRZ-7SmMEisV7pIk0IpNrmyu7GXM&s"
                   style={{ width: "30px", margin: "auto" }}
                 />
@@ -277,6 +302,11 @@ const Projects = () => {
           mt="10px"
           p="20px"
           gap="20px"
+          data-aos='fade-right'
+          data-aos-offset='300'
+          data-aos-easing='ease-in-sine'
+          data-aos-duration='700'
+
         >
           <Box
             w={projects}
@@ -288,6 +318,7 @@ const Projects = () => {
             alignItems="center"
           >
             <img
+              alt="project"
               style={{
                 width: "100%",
                 height: "auto",
@@ -353,6 +384,7 @@ const Projects = () => {
                 href="https://github.com/YashSharma7746/lying-flesh-4692"
               >
                 <img
+                  alt="project"
                   src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png"
                   style={{ width: "30px", margin: "auto" }}
                 />
@@ -362,6 +394,7 @@ const Projects = () => {
                 className="project-deployed-link"
               >
                 <img
+                  alt="project"
                   src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAFwAXAMBIgACEQEDEQH/xAAcAAEAAgIDAQAAAAAAAAAAAAAABQcDBgECBAj/xABDEAABAwMBBAIMCQ0AAAAAAAABAAIDBAUGEQcSIUExUSIyNjdhcXN1gpGysxUXI0JTobHS4QgTFFJVY3SBkpOUotH/xAAWAQEBAQAAAAAAAAAAAAAAAAAAAQL/xAAZEQEBAAMBAAAAAAAAAAAAAAAAAQIRMSH/2gAMAwEAAhEDEQA/ALuREQEREBERAREQEREBERAREQFyoLOu4nIfNdT7pyrHBNk2N5BiVtutc+uFTUxlzxFM1rdd4jgN09SC69Fwqz+I7Evpbn/fb9xSWNbKsdxu9013t0leamn3twSzNLeyaWnUBo5OKonbrmWN2iqkpbleaSnqI9N+J7+yGo1HDxKGqNrOFQkj4XMhH0dLK7X+e7oq2245NZLvXx26gpWT11E4tluDXaBvXENO249OvQejmqrWpjuM3LT6sxPOrPltXU09mFU8UzA+WWSHcYNToBxOup0PLkVs6rzYbZDasKZWSt0nuchqDqOIZ2rB6hvekrDWa0IiKAiIgg867ich811PunKM2Sd7mx+Rd7blJ513E5D5rqfdOUZsk73Nj8i723INvWk7XskmxvD5X0byysrHimheOlmoJc4eENB08JC3ZVF+UZG82SzSjtG1b2nxlnD7CrOpeKdxnH6/JbtDa7VEHSv4uc7g2Ng6XOPID8FZWR7FZKOitfwRVy1U76hkNc5zQAGvcB+caOQbx1HHgdeS3LYjjkdnxGO4yMH6ZdPlnOPSI/mN8WnZekvXkF8udJtRxmz09UWW+sgmfUQ7jTvlrXkcSNR0DoK1cvfEmLc6WnipKWGmp2BkMLGxxtHJoGgCyoiw0IiICIiCDzruJyHzXU+6cozZJ3ubH5F3tuUpnDS7C8ga0EuNsqQABxPyTlWmDbS7dj2J2601lovL56aMte6KlBadXE8NSDzVguZaVthsz7zgNwbC3enpNKqP0O2/0LlF/HJZv2Jfv8Vv3lw7bFZXtLXWO+lpGhBpG8R/UmqjfbJBHS2agp4RpHFTRsaByAaAFoeVd+rDv4Wo9iRY6fa9ZKenigjsl/3I2BjdaVpOgGn6yh4Mlhy3a1jFdQ0Fwp4aaKeOQ1UO7xMbzyJCaqrlREUBERAREQE18KLqQSg7b3hXG+OtYXxvPQV530sxPCYhB794daa+FeSOCRvS8lZ2sI6SgyIgRAREQEXdEHRFirJXQxscwDUysbx6i4A/asbKh7qySEhu60ag6cfm/wDUHpRYTM7emGg7ADT1LmCV0kET3AavYHH1IMqLx3OrkpKeOWNrS50gad4cNOKiKa/1UpG9HANWg8AeZiHX+8P1INjRQYvNQYY37kWrmBx4HmyR3X1sH1qeCDqi7og//9k="
                   style={{ width: "30px", margin: "auto" }}
                 />
@@ -382,6 +415,11 @@ const Projects = () => {
           mt="10px"
           p="20px"
           gap="20px"
+          data-aos='fade-right'
+          data-aos-offset='300'
+          data-aos-easing='ease-in-sine'
+          data-aos-duration='700'
+
         >
           <Box
             w={projects}
@@ -393,6 +431,7 @@ const Projects = () => {
             alignItems="center"
           >
             <img
+              alt="project"
               style={{
                 width: "100%",
                 height: "auto",
@@ -457,6 +496,7 @@ const Projects = () => {
                 href="https://github.com/akash-singha-3558/Mytheresa.com-clone"
               >
                 <img
+                  alt="project"
                   src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png"
                   style={{ width: "30px", margin: "auto" }}
                 />
@@ -466,11 +506,13 @@ const Projects = () => {
                 className="project-deployed-link"
               >
                 <img
+                  alt="project"
                   src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAFwAXAMBIgACEQEDEQH/xAAcAAEAAgIDAQAAAAAAAAAAAAAABQcDBgECBAj/xABDEAABAwMBBAIMCQ0AAAAAAAABAAIDBAUGEQcSIUExUSIyNjdhcXN1gpGysxUXI0JTobHS4QgTFFJVY3SBkpOUotH/xAAWAQEBAQAAAAAAAAAAAAAAAAAAAQL/xAAZEQEBAAMBAAAAAAAAAAAAAAAAAQIRMSH/2gAMAwEAAhEDEQA/ALuREQEREBERAREQEREBERAREQFyoLOu4nIfNdT7pyrHBNk2N5BiVtutc+uFTUxlzxFM1rdd4jgN09SC69Fwqz+I7Evpbn/fb9xSWNbKsdxu9013t0leamn3twSzNLeyaWnUBo5OKonbrmWN2iqkpbleaSnqI9N+J7+yGo1HDxKGqNrOFQkj4XMhH0dLK7X+e7oq2245NZLvXx26gpWT11E4tluDXaBvXENO249OvQejmqrWpjuM3LT6sxPOrPltXU09mFU8UzA+WWSHcYNToBxOup0PLkVs6rzYbZDasKZWSt0nuchqDqOIZ2rB6hvekrDWa0IiKAiIgg867ich811PunKM2Sd7mx+Rd7blJ513E5D5rqfdOUZsk73Nj8i723INvWk7XskmxvD5X0byysrHimheOlmoJc4eENB08JC3ZVF+UZG82SzSjtG1b2nxlnD7CrOpeKdxnH6/JbtDa7VEHSv4uc7g2Ng6XOPID8FZWR7FZKOitfwRVy1U76hkNc5zQAGvcB+caOQbx1HHgdeS3LYjjkdnxGO4yMH6ZdPlnOPSI/mN8WnZekvXkF8udJtRxmz09UWW+sgmfUQ7jTvlrXkcSNR0DoK1cvfEmLc6WnipKWGmp2BkMLGxxtHJoGgCyoiw0IiICIiCDzruJyHzXU+6cozZJ3ubH5F3tuUpnDS7C8ga0EuNsqQABxPyTlWmDbS7dj2J2601lovL56aMte6KlBadXE8NSDzVguZaVthsz7zgNwbC3enpNKqP0O2/0LlF/HJZv2Jfv8Vv3lw7bFZXtLXWO+lpGhBpG8R/UmqjfbJBHS2agp4RpHFTRsaByAaAFoeVd+rDv4Wo9iRY6fa9ZKenigjsl/3I2BjdaVpOgGn6yh4Mlhy3a1jFdQ0Fwp4aaKeOQ1UO7xMbzyJCaqrlREUBERAREQE18KLqQSg7b3hXG+OtYXxvPQV530sxPCYhB794daa+FeSOCRvS8lZ2sI6SgyIgRAREQEXdEHRFirJXQxscwDUysbx6i4A/asbKh7qySEhu60ag6cfm/wDUHpRYTM7emGg7ADT1LmCV0kET3AavYHH1IMqLx3OrkpKeOWNrS50gad4cNOKiKa/1UpG9HANWg8AeZiHX+8P1INjRQYvNQYY37kWrmBx4HmyR3X1sH1qeCDqi7og//9k="
                   style={{ width: "30px", margin: "auto" }}
                 />
               </a>
-              {/* <a href="https://drive.google.com/file/d/1u8Ni68_9D984Qx30H_PF73jpCnbhKlB6/view?usp=sharing"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpIadaB-dkMxZYRZ-7SmMEisV7pIk0IpNrmyu7GXM&s" style={{width:"30px",margin:"auto"}} /></a> */}
+              {/* <a href="https://drive.google.com/file/d/1u8Ni68_9D984Qx30H_PF73jpCnbhKlB6/view?usp=sharing"><img 
+              alt="project" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpIadaB-dkMxZYRZ-7SmMEisV7pIk0IpNrmyu7GXM&s" style={{width:"30px",margin:"auto"}} /></a> */}
             </Box>
           </Box>
         </Flex>
@@ -487,6 +529,11 @@ const Projects = () => {
           mt="10px"
           p="20px"
           gap="20px"
+          data-aos='fade-right'
+          data-aos-offset='300'
+          data-aos-easing='ease-in-sine'
+          data-aos-duration='700'
+
         >
           <Box
             w={projects}
@@ -498,6 +545,7 @@ const Projects = () => {
             alignItems="center"
           >
             <img
+              alt="project"
               style={{
                 width: "100%",
                 height: "auto",
@@ -563,6 +611,7 @@ const Projects = () => {
                 href="https://github.com/Dante2109/enormous-step-3337"
               >
                 <img
+                  alt="project"
                   src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png"
                   style={{ width: "30px", margin: "auto" }}
                 />
@@ -572,11 +621,13 @@ const Projects = () => {
                 className="project-deployed-link"
               >
                 <img
+                  alt="project"
                   src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAFwAXAMBIgACEQEDEQH/xAAcAAEAAgIDAQAAAAAAAAAAAAAABQcDBgECBAj/xABDEAABAwMBBAIMCQ0AAAAAAAABAAIDBAUGEQcSIUExUSIyNjdhcXN1gpGysxUXI0JTobHS4QgTFFJVY3SBkpOUotH/xAAWAQEBAQAAAAAAAAAAAAAAAAAAAQL/xAAZEQEBAAMBAAAAAAAAAAAAAAAAAQIRMSH/2gAMAwEAAhEDEQA/ALuREQEREBERAREQEREBERAREQFyoLOu4nIfNdT7pyrHBNk2N5BiVtutc+uFTUxlzxFM1rdd4jgN09SC69Fwqz+I7Evpbn/fb9xSWNbKsdxu9013t0leamn3twSzNLeyaWnUBo5OKonbrmWN2iqkpbleaSnqI9N+J7+yGo1HDxKGqNrOFQkj4XMhH0dLK7X+e7oq2245NZLvXx26gpWT11E4tluDXaBvXENO249OvQejmqrWpjuM3LT6sxPOrPltXU09mFU8UzA+WWSHcYNToBxOup0PLkVs6rzYbZDasKZWSt0nuchqDqOIZ2rB6hvekrDWa0IiKAiIgg867ich811PunKM2Sd7mx+Rd7blJ513E5D5rqfdOUZsk73Nj8i723INvWk7XskmxvD5X0byysrHimheOlmoJc4eENB08JC3ZVF+UZG82SzSjtG1b2nxlnD7CrOpeKdxnH6/JbtDa7VEHSv4uc7g2Ng6XOPID8FZWR7FZKOitfwRVy1U76hkNc5zQAGvcB+caOQbx1HHgdeS3LYjjkdnxGO4yMH6ZdPlnOPSI/mN8WnZekvXkF8udJtRxmz09UWW+sgmfUQ7jTvlrXkcSNR0DoK1cvfEmLc6WnipKWGmp2BkMLGxxtHJoGgCyoiw0IiICIiCDzruJyHzXU+6cozZJ3ubH5F3tuUpnDS7C8ga0EuNsqQABxPyTlWmDbS7dj2J2601lovL56aMte6KlBadXE8NSDzVguZaVthsz7zgNwbC3enpNKqP0O2/0LlF/HJZv2Jfv8Vv3lw7bFZXtLXWO+lpGhBpG8R/UmqjfbJBHS2agp4RpHFTRsaByAaAFoeVd+rDv4Wo9iRY6fa9ZKenigjsl/3I2BjdaVpOgGn6yh4Mlhy3a1jFdQ0Fwp4aaKeOQ1UO7xMbzyJCaqrlREUBERAREQE18KLqQSg7b3hXG+OtYXxvPQV530sxPCYhB794daa+FeSOCRvS8lZ2sI6SgyIgRAREQEXdEHRFirJXQxscwDUysbx6i4A/asbKh7qySEhu60ag6cfm/wDUHpRYTM7emGg7ADT1LmCV0kET3AavYHH1IMqLx3OrkpKeOWNrS50gad4cNOKiKa/1UpG9HANWg8AeZiHX+8P1INjRQYvNQYY37kWrmBx4HmyR3X1sH1qeCDqi7og//9k="
                   style={{ width: "30px", margin: "auto" }}
                 />
               </a>
-              {/* <a href="https://drive.google.com/file/d/1Ef2C4rhvVOn6XRScfSquCwCG29Iu7iUM/view?usp=sharing"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpIadaB-dkMxZYRZ-7SmMEisV7pIk0IpNrmyu7GXM&s" style={{width:"30px",margin:"auto"}}/></a> */}
+              {/* <a href="https://drive.google.com/file/d/1Ef2C4rhvVOn6XRScfSquCwCG29Iu7iUM/view?usp=sharing"><img 
+              alt="project" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpIadaB-dkMxZYRZ-7SmMEisV7pIk0IpNrmyu7GXM&s" style={{width:"30px",margin:"auto"}}/></a> */}
             </Box>
           </Box>
         </Flex>
@@ -593,6 +644,11 @@ const Projects = () => {
           mt="10px"
           p="20px"
           gap="20px"
+          data-aos='fade-right'
+          data-aos-offset='300'
+          data-aos-easing='ease-in-sine'
+          data-aos-duration='700'
+
         >
           <Box
             w={projects}
@@ -604,6 +660,7 @@ const Projects = () => {
             alignItems="center"
           >
             <img
+              alt="project"
               style={{
                 width: "100%",
                 height: "auto",
@@ -669,6 +726,7 @@ const Projects = () => {
                 href="https://github.com/akash-singha-3558/proud-wax-6546"
               >
                 <img
+                  alt="project"
                   src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png"
                   style={{ width: "30px", margin: "auto" }}
                 />
@@ -678,11 +736,13 @@ const Projects = () => {
                 className="project-deployed-link"
               >
                 <img
+                  alt="project"
                   src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAFwAXAMBIgACEQEDEQH/xAAcAAEAAgIDAQAAAAAAAAAAAAAABQcDBgECBAj/xABDEAABAwMBBAIMCQ0AAAAAAAABAAIDBAUGEQcSIUExUSIyNjdhcXN1gpGysxUXI0JTobHS4QgTFFJVY3SBkpOUotH/xAAWAQEBAQAAAAAAAAAAAAAAAAAAAQL/xAAZEQEBAAMBAAAAAAAAAAAAAAAAAQIRMSH/2gAMAwEAAhEDEQA/ALuREQEREBERAREQEREBERAREQFyoLOu4nIfNdT7pyrHBNk2N5BiVtutc+uFTUxlzxFM1rdd4jgN09SC69Fwqz+I7Evpbn/fb9xSWNbKsdxu9013t0leamn3twSzNLeyaWnUBo5OKonbrmWN2iqkpbleaSnqI9N+J7+yGo1HDxKGqNrOFQkj4XMhH0dLK7X+e7oq2245NZLvXx26gpWT11E4tluDXaBvXENO249OvQejmqrWpjuM3LT6sxPOrPltXU09mFU8UzA+WWSHcYNToBxOup0PLkVs6rzYbZDasKZWSt0nuchqDqOIZ2rB6hvekrDWa0IiKAiIgg867ich811PunKM2Sd7mx+Rd7blJ513E5D5rqfdOUZsk73Nj8i723INvWk7XskmxvD5X0byysrHimheOlmoJc4eENB08JC3ZVF+UZG82SzSjtG1b2nxlnD7CrOpeKdxnH6/JbtDa7VEHSv4uc7g2Ng6XOPID8FZWR7FZKOitfwRVy1U76hkNc5zQAGvcB+caOQbx1HHgdeS3LYjjkdnxGO4yMH6ZdPlnOPSI/mN8WnZekvXkF8udJtRxmz09UWW+sgmfUQ7jTvlrXkcSNR0DoK1cvfEmLc6WnipKWGmp2BkMLGxxtHJoGgCyoiw0IiICIiCDzruJyHzXU+6cozZJ3ubH5F3tuUpnDS7C8ga0EuNsqQABxPyTlWmDbS7dj2J2601lovL56aMte6KlBadXE8NSDzVguZaVthsz7zgNwbC3enpNKqP0O2/0LlF/HJZv2Jfv8Vv3lw7bFZXtLXWO+lpGhBpG8R/UmqjfbJBHS2agp4RpHFTRsaByAaAFoeVd+rDv4Wo9iRY6fa9ZKenigjsl/3I2BjdaVpOgGn6yh4Mlhy3a1jFdQ0Fwp4aaKeOQ1UO7xMbzyJCaqrlREUBERAREQE18KLqQSg7b3hXG+OtYXxvPQV530sxPCYhB794daa+FeSOCRvS8lZ2sI6SgyIgRAREQEXdEHRFirJXQxscwDUysbx6i4A/asbKh7qySEhu60ag6cfm/wDUHpRYTM7emGg7ADT1LmCV0kET3AavYHH1IMqLx3OrkpKeOWNrS50gad4cNOKiKa/1UpG9HANWg8AeZiHX+8P1INjRQYvNQYY37kWrmBx4HmyR3X1sH1qeCDqi7og//9k="
                   style={{ width: "30px", margin: "auto" }}
                 />
               </a>
-              {/* <a href="https://drive.google.com/file/d/1lxB1L5brVBQS-EpAEkTP_pAZP8BZb9AM/view?usp=sharing"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpIadaB-dkMxZYRZ-7SmMEisV7pIk0IpNrmyu7GXM&s" style={{width:"30px",margin:"auto"}}/></a> */}
+              {/* <a href="https://drive.google.com/file/d/1lxB1L5brVBQS-EpAEkTP_pAZP8BZb9AM/view?usp=sharing"><img 
+              alt="project" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpIadaB-dkMxZYRZ-7SmMEisV7pIk0IpNrmyu7GXM&s" style={{width:"30px",margin:"auto"}}/></a> */}
             </Box>
           </Box>
         </Flex>
