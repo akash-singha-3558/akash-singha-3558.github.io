@@ -81,7 +81,7 @@ const Projects = () => {
                 borderBottomLeftRadius: "15px",
               }}
               src={
-                "https://github.com/khanahmad4527/luxefemme/raw/master/client/src/assets/Screenshot%20(120).png?raw=true"
+                "https://raw.githubusercontent.com/khanahmad4527/luxefemme/master/client/src/assets/Screenshot%20(120).png"
               }
             />
           </Box>
@@ -270,7 +270,7 @@ const Projects = () => {
                 />
               </a>
               <a
-                href="https://project-khaki-ten.vercel.app/"
+                href="https://dapper-brigadeiros-9419df.netlify.app/"
                 className="project-deployed-link"
               >
                 <img
