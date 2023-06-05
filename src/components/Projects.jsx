@@ -6,6 +6,8 @@ import 'aos/dist/aos.css';
 // import GitHubCalendar from "react-github-calendar";
 import { Tooltip as ReactTooltip } from "react-tooltip";
 import { Direction, projects, ProjectsImageHeight } from "./styles";
+
+import anthropology from "../anthropology.png"
 const Projects = () => {
 
   useEffect(() => {
@@ -81,7 +83,7 @@ const Projects = () => {
                 borderBottomLeftRadius: "15px",
               }}
               src={
-                "https://private-user-images.githubusercontent.com/112806398/243181881-85041063-5410-4654-b640-45ec8b852052.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJrZXkiOiJrZXkxIiwiZXhwIjoxNjg1ODg2ODE2LCJuYmYiOjE2ODU4ODY1MTYsInBhdGgiOiIvMTEyODA2Mzk4LzI0MzE4MTg4MS04NTA0MTA2My01NDEwLTQ2NTQtYjY0MC00NWVjOGI4NTIwNTIucG5nP1gtQW16LUFsZ29yaXRobT1BV1M0LUhNQUMtU0hBMjU2JlgtQW16LUNyZWRlbnRpYWw9QUtJQUlXTkpZQVg0Q1NWRUg1M0ElMkYyMDIzMDYwNCUyRnVzLWVhc3QtMSUyRnMzJTJGYXdzNF9yZXF1ZXN0JlgtQW16LURhdGU9MjAyMzA2MDRUMTM0ODM2WiZYLUFtei1FeHBpcmVzPTMwMCZYLUFtei1TaWduYXR1cmU9ZDU2NzQ1MzI0MTViM2JkNTcyMDg0NjA4MGNjYTE3NzM4ZWFkMTBjNTg3OGI5NzVmNjU2NjlmYTU5YTQyMzc5ZiZYLUFtei1TaWduZWRIZWFkZXJzPWhvc3QifQ.2gxODmMyZCti5ilWEATWQqbeqi5yWGYtAUtNrbNprYA"
+                anthropology
               }
             />
           </Box>
