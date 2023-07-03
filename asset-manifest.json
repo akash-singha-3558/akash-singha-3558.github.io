@@ -1,20 +1,20 @@
 {
   "files": {
     "main.css": "/static/css/main.489e419a.css",
-    "main.js": "/static/js/main.f92579cb.js",
+    "main.js": "/static/js/main.019a3ee3.js",
     "static/js/787.128fc6e9.chunk.js": "/static/js/787.128fc6e9.chunk.js",
     "static/media/anthropology.png": "/static/media/anthropology.ea43ccef5da29e0b0241.png",
     "static/media/dp.png": "/static/media/dp.a122dcbbd38ceddc25ce.png",
-    "static/media/Akash-Singha-Resume.pdf": "/static/media/Akash-Singha-Resume.bf69e1d4d42cd4ff495d.pdf",
+    "static/media/Akash-Singha-Resume.pdf": "/static/media/Akash-Singha-Resume.bef55eb5e36115481752.pdf",
     "static/media/logo.png": "/static/media/logo.eef3e0aa7055d3a9f16a.png",
     "static/media/nextjs2.png": "/static/media/nextjs2.48ddc8121a0fcb543d64.png",
     "index.html": "/index.html",
     "main.489e419a.css.map": "/static/css/main.489e419a.css.map",
-    "main.f92579cb.js.map": "/static/js/main.f92579cb.js.map",
+    "main.019a3ee3.js.map": "/static/js/main.019a3ee3.js.map",
     "787.128fc6e9.chunk.js.map": "/static/js/787.128fc6e9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.489e419a.css",
-    "static/js/main.f92579cb.js"
+    "static/js/main.019a3ee3.js"
   ]
 }
