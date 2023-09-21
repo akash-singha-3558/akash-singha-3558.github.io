@@ -262,6 +262,7 @@ const Navbar = () => {
             _hover={{ color: "black", bg: "white" }}
             transition="0.4s"
           >
+          
             <span className="nav-link resume">Resume</span>
           </Button>
         </a> */}
